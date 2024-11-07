@@ -1,0 +1,24 @@
+schemaVersion: 2.2.2
+metadata:
+  name: ds-challenge-02
+components:
+  - name: tools
+    container:
+      # Learn more about Universal Developer Image Here
+      # https://registry.devfile.io/viewer/devfiles/community/udi
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
+      env:
+        - name: QUARKUS_HTTP_HOST
+          value: 0.0.0.0
+      endpoints:
+        - exposure: none
+          name: debug
+          protocol: tcp
+          targetPort: 5005
+      volumeMounts:
+        - name: m2
+          path: /home/user/.m2
+      mountSources: true
+  - name: m2
+    volume:
+      size: 1G
