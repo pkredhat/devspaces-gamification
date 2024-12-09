@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/ds-challenge-05.props" />
+</Project>
