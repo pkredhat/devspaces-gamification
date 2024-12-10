@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hq/xEFW8rdY=",
+  "dgSpecHash": "O/rOB+okgck=",
   "success": true,
-  "projectFilePath": "/Users/pk/code/tmp/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj",
+  "projectFilePath": "/home/pk/code/tmp/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj",
   "expectedPackageFiles": [
-    "/Users/pk/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "/Users/pk/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+    "/home/pk/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/home/pk/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []
 }
