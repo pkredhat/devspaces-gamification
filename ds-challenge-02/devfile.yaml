@@ -13,8 +13,9 @@ components:
       endpoints:
         - exposure: public
           name: 'date-endpoint'
-          protocol: http
+          protocol: https
           targetPort: 5151
+          path: '/openapi/v1.json'
       volumeMounts:
         - name: nuget
           path: /home/user/.nuget
@@ -44,5 +45,13 @@ commands:
       component: tools
       workingDir: ${PROJECTS_ROOT}/devspaces-gamification/ds-challenge-02
       commandLine: "dotnet run"
+      group:
+        kind: run
+  - id: 4-run-live-mode
+    exec:
+      label: 4.Run (Live Mode)
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/devspaces-gamification/ds-challenge-02
+      commandLine: "dotnet watch run"
       group:
         kind: run
