@@ -12,9 +12,9 @@ components:
       mountSources: true
       endpoints:
         - exposure: public
-          name: 'hello-endpoint'
+          name: 'date-endpoint'
           protocol: https
-          targetPort: 5032
+          targetPort: 5151
       volumeMounts:
         - name: nuget
           path: /home/user/.nuget
