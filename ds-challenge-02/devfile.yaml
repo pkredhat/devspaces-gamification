@@ -1,24 +1,48 @@
 schemaVersion: 2.2.2
 metadata:
-  name: ds-challenge-02
+  name: dotnet
 components:
   - name: tools
     container:
-      # Learn more about Universal Developer Image Here
-      # https://registry.devfile.io/viewer/devfiles/community/udi
-      image: quay.io/devfile/universal-developer-image:ubi8-latest
-      env:
-        - name: QUARKUS_HTTP_HOST
-          value: 0.0.0.0
-      endpoints:
-        - exposure: none
-          name: debug
-          protocol: tcp
-          targetPort: 5005
-      volumeMounts:
-        - name: m2
-          path: /home/user/.m2
+      image: registry.redhat.io/devspaces/udi-rhel8:3.17
+      memoryLimit: '2Gi'
+      memoryRequest: '1Gi'
+      cpuLimit: '1'
+      cpuRequest: '0.5'
       mountSources: true
-  - name: m2
+      endpoints:
+        - exposure: public
+          name: 'hello-endpoint'
+          protocol: https
+          targetPort: 5032
+      volumeMounts:
+        - name: nuget
+          path: /home/user/.nuget
+  - name: nuget
     volume:
       size: 1G
+commands:
+  - id: 1-update-dependencies
+    exec:
+      label: 1.Update dependencies
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/ds-challenge-02
+      commandLine: "dotnet restore"
+      group:
+        kind: build
+  - id: 2-build
+    exec:
+      label: 2.Build
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/ds-challenge-02
+      commandLine: "dotnet build"
+      group:
+        kind: build
+  - id: 3-run
+    exec:
+      label: 3.Run
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/ds-challenge-02
+      commandLine: "dotnet run"
+      group:
+        kind: run
