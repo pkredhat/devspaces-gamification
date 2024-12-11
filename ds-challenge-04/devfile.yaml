@@ -39,17 +39,25 @@ commands:
       commandLine: "dotnet build"
       group:
         kind: build
-  - id: 3-run
+  - id: 3-test
     exec:
-      label: 3.Run
+      label: 3.Test
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/devspaces-gamification/tests/Challenge4/Tests
+      commandLine: "dotnet test"
+      group:
+        kind: run
+  - id: 4-run
+    exec:
+      label: 4.Run
       component: tools
       workingDir: ${PROJECTS_ROOT}/devspaces-gamification/ds-challenge-04
       commandLine: "dotnet run"
       group:
         kind: run
-  - id: 4-run-live-mode
+  - id: 5-run-live-mode
     exec:
-      label: 4.Run (Live Mode)
+      label: 5.Run (Hot Reload)
       component: tools
       workingDir: ${PROJECTS_ROOT}/devspaces-gamification/ds-challenge-04
       commandLine: "dotnet watch run"
