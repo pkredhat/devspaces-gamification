@@ -26,7 +26,7 @@ commands:
     exec:
       label: 1.Update dependencies
       component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge-02
+      workingDir: ${PROJECTS_ROOT}/ds02
       commandLine: "dotnet restore"
       group:
         kind: build
@@ -34,7 +34,7 @@ commands:
     exec:
       label: 2.Build
       component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge-02
+      workingDir: ${PROJECTS_ROOT}/ds02
       commandLine: "dotnet build"
       group:
         kind: build
@@ -42,7 +42,7 @@ commands:
     exec:
       label: 3.Run
       component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge-02
+      workingDir: ${PROJECTS_ROOT}/ds02
       commandLine: "dotnet run"
       group:
         kind: run
