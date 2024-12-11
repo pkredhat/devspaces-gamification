@@ -43,7 +43,7 @@ commands:
     exec:
       label: 3.Test
       component: tools
-      workingDir: ${PROJECTS_ROOT}/devspaces-gamification/tests/Challenge2/Tests
+      workingDir: ${PROJECTS_ROOT}/devspaces-gamification/tests/Challenge2Tests
       commandLine: "dotnet test"
       group:
         kind: run
