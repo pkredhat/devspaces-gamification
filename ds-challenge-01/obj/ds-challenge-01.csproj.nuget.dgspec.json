@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/home/pk/code/tmp/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj": {}
+    "/Users/pk/code/redhat/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj": {}
   },
   "projects": {
-    "/home/pk/code/tmp/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj": {
+    "/Users/pk/code/redhat/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pk/code/tmp/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj",
+        "projectUniqueName": "/Users/pk/code/redhat/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj",
         "projectName": "ds-challenge-01",
-        "projectPath": "/home/pk/code/tmp/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj",
-        "packagesPath": "/home/pk/.nuget/packages/",
-        "outputPath": "/home/pk/code/tmp/devspaces-gamification/ds-challenge-01/obj/",
+        "projectPath": "/Users/pk/code/redhat/devspaces-gamification/ds-challenge-01/ds-challenge-01.csproj",
+        "packagesPath": "/Users/pk/.nuget/packages/",
+        "outputPath": "/Users/pk/code/redhat/devspaces-gamification/ds-challenge-01/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pk/.nuget/NuGet/NuGet.Config"
+          "/Users/pk/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

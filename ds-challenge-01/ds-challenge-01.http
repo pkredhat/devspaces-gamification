@@ -1,6 +1,6 @@
 @ds_challenge_01_HostAddress = http://localhost:5164
 
-GET {{ds_challenge_01_HostAddress}}/weatherforecast/
+GET {{ds_challenge_01_HostAddress}}/api/getcurrentdate
 Accept: application/json
 
 ###
